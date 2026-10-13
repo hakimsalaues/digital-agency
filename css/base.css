@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap");
+
+:root {
+  --color-dark: #1f2937;
+  --color-primary: #3882f6;
+  --color-light: #f9faf8;
+  --color-muted: #e5e7eb;
+}
+
+/* Include padding and borders in element dimensions. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+/* Keep text links recognizable and keyboard focus visible. */
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 0.15em;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Use .button on an anchor for the same appearance as a button. */
+button,
+.button {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: 2px solid transparent;
+  border-radius: 0.375rem;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  border-color: currentColor;
+}

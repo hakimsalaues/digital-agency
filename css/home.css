@@ -1,0 +1,214 @@
+/* Shared home-page spacing; wide screens keep content centered. */
+.hero,
+.expertise,
+.testimonial {
+  padding: 5rem max(1.5rem, calc((100% - 1100px) / 2));
+  overflow-wrap: anywhere;
+}
+
+/* Hero: equal-width text and image columns. */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.hero-content,
+.hero-image-placeholder {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--color-light);
+}
+
+.hero-content > p {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  color: var(--color-muted);
+}
+
+.hero .button {
+  background-color: var(--color-primary);
+}
+
+.hero-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  padding: 1.5rem;
+  background-color: var(--color-muted);
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.hero-image-placeholder p,
+.service-illustration-placeholder p {
+  margin: 0;
+}
+
+/* Expertise: four equal cards with square illustration spaces. */
+.expertise > h2 {
+  margin-bottom: 3rem;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-card {
+  flex: 0 1 calc((100% - 6rem) / 4);
+  min-width: 0;
+  text-align: center;
+}
+
+.service-illustration-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 4px solid var(--color-primary);
+  border-radius: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+}
+
+.service-card > p {
+  margin-bottom: 0;
+}
+
+/* Future images stay within their placeholder containers. */
+.hero-image-placeholder img,
+.service-illustration-placeholder img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Testimonial: centered content with a readable line length. */
+.testimonial {
+  background-color: var(--color-muted);
+}
+
+.testimonial > h2,
+.testimonial > p {
+  text-align: center;
+}
+
+.testimonial blockquote {
+  max-width: 850px;
+  margin: 2rem auto 0;
+}
+
+.testimonial blockquote p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* CTA: grouped heading and supporting text beside the desktop link. */
+.call-to-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 3rem;
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  overflow-wrap: anywhere;
+}
+
+.call-to-action .cta-text {
+  flex: 1 1 20rem;
+  min-width: 0;
+}
+
+.call-to-action h2 {
+  margin: 0 0 0.5rem;
+}
+
+.call-to-action .cta-text > p {
+  margin: 0;
+}
+
+.call-to-action .button {
+  flex: 0 0 auto;
+  max-width: 100%;
+  border-color: var(--color-light);
+  background-color: transparent;
+}
+
+.call-to-action .button:hover {
+  background-color: var(--color-dark);
+}
+
+/* Tablet: two cards per row and space around the CTA panel. */
+@media (max-width: 1199px) {
+  .service-card {
+    flex-basis: calc((100% - 2rem) / 2);
+  }
+
+  .call-to-action {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+/* Mobile: stack content and keep placeholders within the viewport. */
+@media (max-width: 767px) {
+  .hero,
+  .expertise,
+  .testimonial {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .hero-content,
+  .hero-image-placeholder {
+    flex: none;
+  }
+
+  .service-card {
+    flex-basis: 100%;
+    max-width: 320px;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .call-to-action .cta-text {
+    flex: none;
+  }
+}
