@@ -1,0 +1,196 @@
+.about-page {
+  overflow-wrap: anywhere;
+}
+
+.about-container {
+  width: min(1100px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.about-hero {
+  padding-block: 5rem;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.about-hero-layout,
+.about-purpose-layout,
+.about-values-layout,
+.about-contact-panel {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-hero-layout {
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Equal columns may shrink below their intrinsic content widths without overflow. */
+.about-introduction,
+.about-illustration,
+.about-purpose-card,
+.about-value-card {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.about-eyebrow {
+  font-weight: 700;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.about-introduction > p {
+  color: var(--color-muted);
+  font-size: 1.125rem;
+}
+
+/* Dark text preserves contrast on the shared primary blue. */
+.about-introduction .button {
+  margin-top: 0.5rem;
+  color: var(--color-dark);
+}
+
+.about-illustration {
+  display: block;
+}
+
+.about-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.about-purpose,
+.about-values {
+  padding-block: 4rem;
+}
+
+.about-page h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.about-purpose > h2,
+.about-values h2 {
+  text-align: center;
+}
+
+.about-purpose-layout {
+  margin-top: 2rem;
+}
+
+.about-purpose-card {
+  padding: 2rem;
+  border-left: 4px solid var(--color-primary);
+  background-color: var(--color-muted);
+}
+
+.about-page h3 {
+  font-size: 1.5rem;
+}
+
+.about-purpose-card p,
+.about-value-card p {
+  margin-bottom: 0;
+}
+
+.about-values {
+  background-color: var(--color-muted);
+}
+
+.about-section-intro {
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.about-values-layout {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about-value-card {
+  flex-basis: 15rem;
+  padding: 1.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 0.75rem;
+  background-color: var(--color-light);
+}
+
+.about-contact {
+  padding-block: 4rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.about-contact-panel {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-primary);
+}
+
+.about-contact-copy {
+  flex: 1 1 28rem;
+  min-width: 0;
+}
+
+.about-contact-note {
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+}
+
+.about-contact-link {
+  max-width: 100%;
+  background-color: var(--color-dark);
+}
+
+.about-contact-link:hover {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.about-contact-link:focus-visible {
+  outline-color: var(--color-dark);
+}
+
+/* Stack the hero and purpose panels; the picture selects the mobile composition. */
+@media (max-width: 767px) {
+  .about-hero,
+  .about-purpose,
+  .about-values,
+  .about-contact {
+    padding-block: 3rem;
+  }
+
+  .about-hero-layout,
+  .about-purpose-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-purpose-card,
+  .about-contact-panel {
+    padding: 1.5rem;
+  }
+
+  .about-illustration {
+    width: 100%;
+    max-width: 28rem;
+    align-self: center;
+  }
+}
