@@ -7,7 +7,6 @@
   --color-muted: #e5e7eb;
 }
 
-/* Include padding and borders in element dimensions. */
 *,
 *::before,
 *::after {

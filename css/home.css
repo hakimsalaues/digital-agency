@@ -102,7 +102,6 @@
   height: auto;
 }
 
-/* Testimonial: centered content with a readable line length. */
 .testimonial {
   background-color: var(--color-muted);
 }
