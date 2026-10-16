@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Agency | Home</title>
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
+    <header class="site-header">
+      <a href="index.html" class="site-logo">Digital Agency</a>
+
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-controls="main-navigation"
+      />
+
+      <label for="menu-toggle" class="menu-button">
+        <span class="menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span>Menu</span>
+      </label>
+
+      <nav id="main-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-heading">
@@ -21,7 +51,12 @@
           <a class="button" href="services.html">Explore our services</a>
         </div>
         <div class="hero-image-placeholder">
-          <p>Agency team image coming soon.</p>
+          <img
+            src="assets/images/home-team.svg"
+            width="640"
+            height="360"
+            alt="Three agency teammates collaborating around a laptop and project board."
+          />
         </div>
       </section>
 
@@ -30,7 +65,12 @@
         <div class="service-cards">
           <article class="service-card">
             <div class="service-illustration-placeholder">
-              <p>Web development illustration coming soon.</p>
+              <img
+                src="assets/images/home-web-development.svg"
+                width="240"
+                height="240"
+                alt="Browser window with code brackets."
+              />
             </div>
             <h3>Web Development</h3>
             <p>
@@ -41,7 +81,12 @@
 
           <article class="service-card">
             <div class="service-illustration-placeholder">
-              <p>UI/UX design illustration coming soon.</p>
+              <img
+                src="assets/images/home-ui-ux.svg"
+                width="240"
+                height="240"
+                alt="Desktop and mobile interface wireframes."
+              />
             </div>
             <h3>UI/UX Design</h3>
             <p>
@@ -52,7 +97,12 @@
 
           <article class="service-card">
             <div class="service-illustration-placeholder">
-              <p>Digital consulting illustration coming soon.</p>
+              <img
+                src="assets/images/home-consulting.svg"
+                width="240"
+                height="240"
+                alt="Technology advisor discussing connected digital tools."
+              />
             </div>
             <h3>Digital Consulting</h3>
             <p>
@@ -63,7 +113,12 @@
 
           <article class="service-card">
             <div class="service-illustration-placeholder">
-              <p>Digital strategy illustration coming soon.</p>
+              <img
+                src="assets/images/home-strategy.svg"
+                width="240"
+                height="240"
+                alt="Analytics chart with rising results and a strategy target."
+              />
             </div>
             <h3>Digital Strategy</h3>
             <p>
@@ -90,13 +145,16 @@
         <hgroup class="cta-text">
           <h2 id="contact-heading">Let’s build something together</h2>
           <p>
-            Have a project in mind? Learn more about our team and get in touch to
-            discuss your next step.
+            Have a project in mind? Learn more about our team and get in touch
+            to discuss your next step.
           </p>
         </hgroup>
         <a class="button" href="about.html">About us &amp; contact</a>
       </section>
     </main>
 
+    <footer class="site-footer">
+      <p>&copy; 2026 Digital Agency. All rights reserved.</p>
+    </footer>
   </body>
 </html>

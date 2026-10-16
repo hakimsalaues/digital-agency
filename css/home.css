@@ -48,11 +48,6 @@
   text-align: center;
 }
 
-.hero-image-placeholder p,
-.service-illustration-placeholder p {
-  margin: 0;
-}
-
 /* Expertise: four equal cards with square illustration spaces. */
 .expertise > h2 {
   margin-bottom: 3rem;
@@ -94,10 +89,11 @@
   margin-bottom: 0;
 }
 
-/* Future images stay within their placeholder containers. */
+/* Scale vector artwork proportionally within the existing image containers. */
 .hero-image-placeholder img,
 .service-illustration-placeholder img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
