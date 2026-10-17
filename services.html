@@ -1,108 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | Digital Agency</title>
-  <meta name="description" content="Explore our web development, UI/UX design, and digital consulting services.">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/navigation.css">
-  <link rel="stylesheet" href="css/services.css">
-</head>
-<body>
-<header class="site-header">
-  <a href="index.html" class="site-logo">Digital Agency</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Digital Agency</title>
+    <meta
+      name="description"
+      content="Explore our web development, UI/UX design, and digital consulting services."
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/services.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="site-logo">Digital Agency</a>
 
-  <input
-    type="checkbox"
-    id="menu-toggle"
-    class="menu-toggle"
-    aria-controls="main-navigation"
-  >
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-controls="main-navigation"
+      />
 
-  <label for="menu-toggle" class="menu-button">
-    <span class="menu-icon" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-    <span>Menu</span>
-  </label>
+      <label for="menu-toggle" class="menu-button">
+        <span class="menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span>Menu</span>
+      </label>
 
-  <nav id="main-navigation" aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="services.html" aria-current="page">Services</a>
-      </li>
-      <li><a href="about.html">About &amp; Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <nav id="main-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="services.html" aria-current="page">Services</a>
+          </li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-        <section class="services-intro">
-            <h1>Our Services</h1>
-            <p>
-                We help businesses build their online presence through
-                thoughtful design, reliable websites, and practical digital advice.
-            </p>
-        </section>
-    <section class="services-section" aria-labelledby="services-heading">
+      <section class="services-intro">
+        <h1>Our Services</h1>
+        <p>
+          We help businesses build their online presence through thoughtful
+          design, reliable websites, and practical digital advice.
+        </p>
+      </section>
+      <section class="services-section" aria-labelledby="services-heading">
         <h2 id="services-heading">How we can help</h2>
 
-        <div class="services-list">
-            <article class="service-card">
-                <h3>Web Development</h3>
-                <p>
-                    We build responsive websites that help businesses
-                    present their work clearly on any screen.
-                </p>
-                <ul>
-                    <li>Business websites</li>
-                    <li>Landing pages</li>
-                    <li>Website maintenance</li>
-                </ul>
-            </article>
+        <ul class="services-list" role="list">
+          <li class="service-card">
+            <h3>Web Development</h3>
+            <p>
+              We build responsive websites that help businesses present their
+              work clearly on any screen.
+            </p>
+            <ul>
+              <li>Business websites</li>
+              <li>Landing pages</li>
+              <li>Website maintenance</li>
+            </ul>
+          </li>
 
-            <article class="service-card">
-                <h3>UI/UX Design</h3>
-                <p>
-                    We design clear, welcoming interfaces that make
-                    websites easier to navigate and use.
-                </p>
-                <ul>
-                    <li>Wireframes and prototypes</li>
-                    <li>Visual interface design</li>
-                    <li>Usability reviews</li>
-                </ul>
-            </article>
+          <li class="service-card">
+            <h3>UI/UX Design</h3>
+            <p>
+              We design clear, welcoming interfaces that make websites easier to
+              navigate and use.
+            </p>
+            <ul>
+              <li>Wireframes and prototypes</li>
+              <li>Visual interface design</li>
+              <li>Usability reviews</li>
+            </ul>
+          </li>
 
-            <article class="service-card">
-                <h3>Digital Consulting</h3>
-                <p>
-                    We help businesses understand their digital needs
-                    and plan practical improvements.
-                </p>
-                <ul>
-                    <li>Website reviews</li>
-                    <li>Technology guidance</li>
-                    <li>Digital project planning</li>
-                </ul>
-            </article>
-        </div>
-    </section>
+          <li class="service-card">
+            <h3>Digital Consulting</h3>
+            <p>
+              We help businesses understand their digital needs and plan
+              practical improvements.
+            </p>
+            <ul>
+              <li>Website reviews</li>
+              <li>Technology guidance</li>
+              <li>Digital project planning</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-    <section class="services-contact" aria-labelledby="contact-heading">
+      <section class="services-contact" aria-labelledby="contact-heading">
         <h2 id="contact-heading">Have a project in mind?</h2>
         <p>Tell us about your idea and explore how we can help.</p>
         <a class="contact-link" href="about.html">Contact our team</a>
-    </section>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2026 Digital Agency. All rights reserved.</p>
+      <p>&copy; 2026 Digital Agency. All rights reserved.</p>
     </footer>
-</body>
-
+  </body>
 </html>

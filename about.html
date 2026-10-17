@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About &amp; Contact | Digital Agency</title>
-    <meta name="description" content="Meet Digital Agency: our mission, vision, and values, and how we approach useful, accessible digital experiences." />
+    <meta
+      name="description"
+      content="Meet Digital Agency: our mission, vision, and values, and how we approach useful, accessible digital experiences."
+    />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/about.css" />
@@ -12,7 +15,12 @@
   <body>
     <header class="site-header">
       <a href="index.html" class="site-logo">Digital Agency</a>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-navigation" />
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-controls="main-navigation"
+      />
       <label for="menu-toggle" class="menu-button">
         <span class="menu-icon" aria-hidden="true">
           <span></span>
@@ -36,61 +44,116 @@
           <div class="about-introduction">
             <p class="about-eyebrow">Thoughtful ideas. Useful experiences.</p>
             <h1 id="about-heading">Who We Are</h1>
-            <p>We are Digital Agency, a digital and technology team creating modern digital solutions for businesses ready to take their next step.</p>
-            <p>We bring design, development, and practical strategy together to build websites that are clear, accessible, and easy to use.</p>
+            <p>
+              We are Digital Agency, a digital and technology team creating
+              modern digital solutions for businesses ready to take their next
+              step.
+            </p>
+            <p>
+              We bring design, development, and practical strategy together to
+              build websites that are clear, accessible, and easy to use.
+            </p>
             <a class="button" href="#contact">Let’s talk about your project</a>
           </div>
           <!-- Art direction: simplify the composition on mobile; retain a wide workspace on larger screens. -->
           <picture class="about-illustration">
-            <source media="(max-width: 767px)" srcset="assets/images/about-workspace-mobile.svg" width="400" height="320" />
-            <img src="assets/images/about-workspace-desktop.svg" width="640" height="440" alt="" />
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/images/about-workspace-mobile.svg"
+              width="400"
+              height="320"
+            />
+            <img
+              src="assets/images/about-workspace-desktop.svg"
+              width="640"
+              height="440"
+              alt=""
+            />
           </picture>
         </div>
       </section>
 
-      <section class="about-purpose about-container" aria-labelledby="purpose-heading">
+      <section
+        class="about-purpose about-container"
+        aria-labelledby="purpose-heading"
+      >
         <h2 id="purpose-heading">Our Mission and Vision</h2>
         <div class="about-purpose-layout">
-          <article class="about-purpose-card">
+          <div class="about-purpose-card">
             <h3>Our Mission</h3>
-            <p>Help businesses grow through accessible, useful digital solutions. We turn real needs into clear websites and experiences that support people in their everyday tasks.</p>
-          </article>
-          <article class="about-purpose-card">
+            <p>
+              Help businesses grow through accessible, useful digital solutions.
+              We turn real needs into clear websites and experiences that
+              support people in their everyday tasks.
+            </p>
+          </div>
+          <div class="about-purpose-card">
             <h3>Our Vision</h3>
-            <p>Make high-quality digital experiences accessible to businesses of different sizes. Every business deserves a thoughtful online presence and a clear path to its next opportunity.</p>
-          </article>
+            <p>
+              Make high-quality digital experiences accessible to businesses of
+              different sizes. Every business deserves a thoughtful online
+              presence and a clear path to its next opportunity.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="about-values" aria-labelledby="values-heading">
         <div class="about-container">
           <h2 id="values-heading">Our Values</h2>
-          <p class="about-section-intro">The principles behind every idea, conversation, and delivery.</p>
-          <div class="about-values-layout">
-            <article class="about-value-card">
+          <p class="about-section-intro">
+            The principles behind every idea, conversation, and delivery.
+          </p>
+          <ul class="about-values-layout" role="list">
+            <li class="about-value-card">
               <h3>Innovation</h3>
-              <p>We explore fresh ideas and choose technology that solves real problems, keeping every solution useful and purposeful.</p>
-            </article>
-            <article class="about-value-card">
+              <p>
+                We explore fresh ideas and choose technology that solves real
+                problems, keeping every solution useful and purposeful.
+              </p>
+            </li>
+            <li class="about-value-card">
               <h3>Collaboration</h3>
-              <p>We listen, share ideas, and work closely with our clients. Clear communication helps us build toward a shared goal.</p>
-            </article>
-            <article class="about-value-card">
+              <p>
+                We listen, share ideas, and work closely with our clients. Clear
+                communication helps us build toward a shared goal.
+              </p>
+            </li>
+            <li class="about-value-card">
               <h3>Quality</h3>
-              <p>We care about the details, from readable content to responsive layouts, creating experiences people can use with confidence.</p>
-            </article>
-          </div>
+              <p>
+                We care about the details, from readable content to responsive
+                layouts, creating experiences people can use with confidence.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="about-contact about-container" id="contact" aria-labelledby="contact-heading">
+      <section
+        class="about-contact about-container"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
         <div class="about-contact-panel">
           <div class="about-contact-copy">
             <h2 id="contact-heading">Let’s Work Together</h2>
-            <p>Have a digital project in mind? Tell us what you want to achieve, who you want to reach, and where you need a helping hand.</p>
-            <p id="contact-note" class="about-contact-note">This is a fictional agency for a class project. The email below is a demonstration placeholder; it is not a monitored inbox.</p>
+            <p>
+              Have a digital project in mind? Tell us what you want to achieve,
+              who you want to reach, and where you need a helping hand.
+            </p>
+            <p id="contact-note" class="about-contact-note">
+              This is a fictional agency for a class project. The email below is
+              a demonstration placeholder; it is not a monitored inbox.
+            </p>
           </div>
-          <a class="button about-contact-link" href="mailto:hello@digitalagency.example" aria-describedby="contact-note">Email us (demo)</a>
+          <a
+            class="button about-contact-link"
+            href="mailto:hello@digitalagency.example"
+            aria-describedby="contact-note"
+          >
+            Email us (demo)
+          </a>
         </div>
       </section>
     </main>
