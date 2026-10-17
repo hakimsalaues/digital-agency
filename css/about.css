@@ -111,6 +111,9 @@
 }
 
 .about-values-layout {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
